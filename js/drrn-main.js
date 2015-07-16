@@ -25,7 +25,8 @@ $(function () {
 //hide nav on scroll
     var lastScrollTop = 0, delta = 5;
     $(window).scroll(function (event) {
-        var st = $(this).scrollTop();
+        var st = $(this).scrollTop(),
+            scroll = $(window).scrollTop();
        
         if (Math.abs(lastScrollTop - st) <= delta) {
             return;
@@ -39,5 +40,9 @@ $(function () {
             $("#nav").removeClass('nav-up').addClass('nav-down');
         }
         lastScrollTop = st;
+        
+        if (scroll < 10) {
+            $("#nav").removeClass('nav-up').addClass('nav-down');
+        }
     });
 });
