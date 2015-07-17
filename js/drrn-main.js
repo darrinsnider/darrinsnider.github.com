@@ -29,7 +29,7 @@ $(function () {
         var st = $(this).scrollTop(),
             scroll = $(window).scrollTop();
         
-        if (scroll < 1) {
+        if (scroll < 83) {
             $("#nav").addClass('nav-top');
         } else {
             $("#nav").removeClass('nav-top');
