@@ -35,7 +35,7 @@ $(function () {
             $("#nav").removeClass('nav-top');
             if (st > lastScrollTop) {   // scroll down
                 $("#nav").addClass('nav-bye-bye');
-            } else if (st < lastScrollTop) {   // scroll up
+            } else {   // scroll up
                 $("#nav").removeClass('nav-bye-bye');
             }
             lastScrollTop = st;
