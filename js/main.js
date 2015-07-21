@@ -15,7 +15,7 @@ $(function () {
                 }, 300, 'swing');
                 //hide nav after scroll
                 setTimeout(function () {
-                    $('#nav').removeClass('nav-down').addClass('nav-up');
+                    $('#nav').addClass('nav-bye-bye');
                 }, 330);
                 return false;
             }
@@ -29,42 +29,16 @@ $(function () {
         var st = $(this).scrollTop(),
             scroll = $(window).scrollTop();
         
-        if (scroll < 83) {
+        if (scroll < 1) {
             $("#nav").addClass('nav-top');
         } else {
             $("#nav").removeClass('nav-top');
             if (st > lastScrollTop) {   // scroll down
-                $("#nav").addClass('nav-bye-bye');
+                $("#nav, #proj-nav").addClass('nav-bye-bye');
             } else {   // scroll up
-                $("#nav").removeClass('nav-bye-bye');
+                $("#nav, #proj-nav").removeClass('nav-bye-bye');
             }
             lastScrollTop = st;
         }
     });
-        
-        
-        
-       
-//    var lastScrollTop = 0, delta = 5;
-//    $(window).scroll(function (event) {
-//        var st = $(this).scrollTop(),
-//            scroll = $(window).scrollTop();
-//       
-//        if (Math.abs(lastScrollTop - st) <= delta) {
-//            return;
-//        }
-//        
-//        if (st > lastScrollTop) {
-//            // scroll down
-//            $("#nav").removeClass('nav-down').addClass('nav-up');
-//        } else {
-//            // scroll up
-//            $("#nav").removeClass('nav-up').addClass('nav-down');
-//        }
-//        lastScrollTop = st;
-//        
-//        if (scroll < 10) {
-//            $("#nav").removeClass('nav-up').addClass('nav-down');
-//        }
-//    });
 });
