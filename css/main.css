@@ -52,6 +52,12 @@ img {
 .show-tablet {
     opacity: 0;
 }
+::-moz-selection {
+    background: #aaa;
+}
+::selection {
+    background: #aaa;
+}
 /* -------------------------------------------------------------------------- */
 header {
     height: 3.1875em;
@@ -285,8 +291,8 @@ footer p {
     margin: 0;
     color: #bbb;
 }
-#crave-gap {
-    margin-top: 2em;
+.img-gap {
+    margin-bottom: 2em;
 }
 
 /* MOBILE(L)================================================================= */
@@ -305,9 +311,10 @@ footer p {
     #work h2 {
         font-size: 2em;
     }
-    .img-description {
+    .img-description, .img-gap {
         margin: 0 auto 3em;
     }
+    
 }
     
 /* TABLET(P)================================================================= */
@@ -379,7 +386,7 @@ footer p {
     .description {
         margin: 4em auto 5.5em;
     }
-    .img-description {
+    .img-description, .img-gap {
         margin: 0 auto 4em;
     }
     .show-tablet {
