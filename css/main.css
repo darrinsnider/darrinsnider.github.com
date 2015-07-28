@@ -87,7 +87,7 @@ header {
     font: 600 4em Rajdhani;
     letter-spacing: normal;
     position: absolute;
-    top: -1.0625em;
+    top: -1.07em;
     left: 0.25em;
 }
 .nav ul {
@@ -331,6 +331,7 @@ footer p {
         height:3.75em;    }
     #drrn {
         font: 600 4.75em Rajdhani;
+        top: -1.0625em;
         left: 0.4375em;
     }
     .nav ul {
@@ -443,6 +444,9 @@ footer p {
     }
     .nav {
         height:5em;
+    }
+    #drrn {
+        font: 600 6.25em Rajdhani;
     }
     .nav ul {
         top: 0.375em;
