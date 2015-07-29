@@ -167,6 +167,9 @@ button.swiper-pagination-bullet {
 #intechrate .swiper-pagination-bullet-active {
     border: 1px solid #ED1164;
 }
+#kadr .swiper-pagination-bullet-active {
+    border: 1px solid #FE2342;
+}
 .swiper-container-horizontal > .swiper-pagination {
     bottom: 10px;
     left: 0;
