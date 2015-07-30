@@ -43,7 +43,7 @@ $(function () {
     });
     
 // click to play/pause
-    $('.video').click(function () {
+    $('.vid-click').click(function () {
         this.paused ? this.play() : this.pause();
     });
 });
