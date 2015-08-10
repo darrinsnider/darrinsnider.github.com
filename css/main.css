@@ -107,6 +107,14 @@ header {
     top: -1.07em;
     left: 0.25em;
 }
+#drrn:hover {
+    -ms-transform: scale(1.075,1.075);
+    -webkit-transform: scale(1.075,1.075);
+    transform: scale(1.075,1.075);
+}
+#drrn:hover a {
+    color: #d8ff00;
+}
 .nav ul {
     position: relative;
     top: -0.1875em;
