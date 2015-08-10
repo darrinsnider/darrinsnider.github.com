@@ -21,14 +21,17 @@ $(function () {
             }
         }
     });
-    
+
 // hide nav on scroll
     var lastScrollTop = 0,
-        delta = 1;   // pixel move needed to trigger
+        delta = 4;   // pixel move needed to trigger
     $(window).scroll(function (event) {
         var st = $(this).scrollTop(),
             scroll = $(window).scrollTop();
         
+        if (Math.abs(lastScrollTop - st) <= delta) {
+            return;
+        }
         if (scroll < 1) {
             $("#nav").addClass('nav-top');
         } else {
@@ -41,7 +44,7 @@ $(function () {
             lastScrollTop = st;
         }
     });
-    
+
 // click to play/pause
     $('.vid-click').click(function () {
         this.paused ? this.play() : this.pause();
