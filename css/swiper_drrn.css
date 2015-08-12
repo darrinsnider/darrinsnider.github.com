@@ -176,6 +176,9 @@ button.swiper-pagination-bullet {
 #alexa .swiper-pagination-bullet-active {
     border: 1px solid #117184;
 }
+#edge .swiper-pagination-bullet-active {
+    border: 1px solid #c30000;
+}
 .swiper-container-horizontal > .swiper-pagination {
     bottom: 10px;
     left: 0;
