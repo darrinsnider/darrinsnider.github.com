@@ -164,6 +164,9 @@ button.swiper-pagination-bullet {
     position: relative;
     top: 1px;
 }
+#voyager .swiper-pagination-bullet-active {
+    border: 1px solid #FC2B49;
+}
 #intechrate .swiper-pagination-bullet-active {
     border: 1px solid #ED1164;
 }
