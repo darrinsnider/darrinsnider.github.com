@@ -53,6 +53,7 @@ img {
     position: absolute;
     width: 87%;
     left: 6.5%;
+    cursor: url("/img/play-cursor.png"), auto;
 }
 .video.v-cinema video {
     top: 4%;
