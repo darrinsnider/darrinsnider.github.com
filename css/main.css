@@ -271,6 +271,13 @@ footer p {
     font-size: 0.75em;
     letter-spacing: 0.09375em;
 }
+footer a {
+    color: #555;
+    cursor: text;
+}
+footer a:hover {
+    color: #555;
+}
 /* -------------------------------------------------------------------------- */
 .proj-nav {
     pointer-events: none;
