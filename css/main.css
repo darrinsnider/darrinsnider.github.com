@@ -131,6 +131,13 @@ header {
 #drrn:hover a {
     color: #d8ff00;
 }
+.nav img {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom: 10em;
+}
+
 .nav ul {
     position: relative;
     top: -0.1875em;
@@ -285,13 +292,6 @@ footer p {
     color: #555;
     font-size: 0.75em;
     letter-spacing: 0.09375em;
-}
-footer a {
-    color: #555;
-    cursor: text;
-}
-footer a:hover {
-    color: #555;
 }
 /* -------------------------------------------------------------------------- */
 .proj-nav {
