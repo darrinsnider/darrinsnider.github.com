@@ -10,6 +10,14 @@
         <link href='//fonts.googleapis.com/css?family=Rajdhani:300,400,600' rel='stylesheet' type='text/css'>
         <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/favicon.ico">
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+        <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://drrn.xyz",
+        "logo": "http://drrn.xyz/apple-touch-icon.png"
+        }
+        </script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,9 +31,9 @@
     <body>
         <div id="contain"> <!--black-bg-->
             <header class="animate"></header>
-            <section itemscope itemtype="http://schema.org/Organization"  id="nav" class="nav">
-                <h1 id="drrn" class="animate" style="cursor: default"><a itemprop="url" href="http://drrn.xyz/">DRRN</a></h1>
-                <img itemprop="logo" src="http://drrn.xyz/apple-touch-icon.png">
+            <section id="nav" class="nav">
+                <h1 id="drrn" class="animate" style="cursor: default"><a href="/">DRRN</a></h1>
+                <img src="/apple-touch-icon.png"> <!--for schema org logo-->
                 <ul>
                     <li class="animate"><a href="#about">about</a></li>
                     <li class="animate"><a href="#work">work</a></li>
