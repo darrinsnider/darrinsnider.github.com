@@ -1,0 +1,167 @@
+/* [ work ] * [ work ] * [ work ] * [ work ] * [ work ] * [ work ] */
+
+.swiper-container {
+  padding-top: 70px;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.hero-mock {
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  right: -40px;
+  opacity: 0;
+  transition: all ease .75s .5s;
+}
+
+.swiper-slide-active .hero-mock {
+  opacity: 1;
+  left: 0;
+  right: 0;
+}
+
+.slide-text h2 {
+  font-size: 30px;
+}
+
+.slide-text .desc {
+  font-size: 17px;
+}
+
+
+/* [ about ] * [ about ] * [ about ] * [ about ] * [ about ] * [ about ] */
+
+.skill-name {
+  padding-top: 14px;
+}
+
+
+/* [ contact ] * [ contact ] * [ contact ] * [ contact ] * [ contact ] */
+
+#contactImageContainer {
+  height: 335px;
+  background: #000000;
+}
+
+#contactImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../img/home/contact-image.jpg) no-repeat 17%;
+  background-size: cover;
+  opacity: .8;
+  transform: scale(1);
+}
+
+#contactTickers {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  margin: 0;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+
+/* [ default is XS ] */
+
+
+/* [ SM ] * [ mobile landscape ] * [ SM ] * [ mobile landscape ] * [ SM ] */
+
+@media screen and (min-width: 576px) {}
+
+
+/* [ MD ] * [ tablet portrait ] * [ MD ] * [ tablet portrait ] * [ MD ] */
+
+@media screen and (min-width: 768px) {
+  .slide-text h2 {
+    font-size: 34px;
+  }
+  .slide-text .desc {
+    font-size: 21px;
+  }
+  #contactImageContainer {
+    height: 500px;
+  }
+}
+
+
+/* [ LG ] * [ desktop ] * [ LG ] * [ desktop ] * [ LG ] * [ desktop ] * [ LG ] */
+
+@media screen and (min-width: 992px) {
+  #contactImage {
+    background: url(../img/home/contact-image.jpg) no-repeat center;
+    opacity: .9;
+  }
+  #contactImage.hover,
+  #contactImage:hover {
+    opacity: .75;
+    transform: scale(.95);
+  }
+  #contactTickers.hover,
+  #contactTickers:hover {
+    transform: translateY(-50%) scale(1.05);
+  }
+}
+
+
+/* [ XL ] * [ large desktop ] * [ XL ] * [ large desktop ] * [ XL ] */
+
+@media screen and (min-width: 1200px) {
+  .hero-imgs {
+    width: 1170px;
+  }
+  .hero-bg {
+    max-width: 970px;
+  }
+  .hero-mock {
+    width: 1170px;
+    transition-delay: .75s;
+  }
+  .slide-text {
+    opacity: 0;
+    transition: all ease .75s .75s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(1.05);
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  }
+  .swiper-slide-active .slide-text {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+  .slide-text .desc {
+    color: #fff;
+  }
+  #skill1 {
+    position: relative;
+    top: 15px
+  }
+  #lottieSkill1 {
+    position: relative;
+    left: 20%;
+    top: -90px;
+  }
+  #lottieSkill2 {
+    position: relative;
+    right: 20%;
+    top: 70px;
+  }
+  #skill3 {
+    position: relative;
+    left: 8%;
+  }
+  #lottieSkill3 {
+    position: relative;
+    left: 3%;
+    top: -120px;
+  }
+}

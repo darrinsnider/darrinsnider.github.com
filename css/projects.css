@@ -1,0 +1,124 @@
+.proj-nav-prev-d {
+  transform: rotate(-90deg);
+  top: 180px;
+  padding-left: 60px;
+  left: 0;
+}
+
+.proj-nav-next-d {
+  transform: rotate(90deg);
+  top: 198px;
+  padding-right: 60px;
+  right: 0;
+}
+
+.proj-nav-prev-d:hover {
+  top: 176px;
+}
+
+.proj-nav-next-d:hover {
+  top: 202px;
+}
+
+.proj-nav-prev {
+  transform: rotate(-90deg);
+  right: -30px;
+  top: 0
+}
+
+.proj-nav-next {
+  transform: rotate(90deg);
+  left: -30px;
+  top: 18px
+}
+
+.proj-nav-prev:hover {
+  top: -4px;
+}
+
+.proj-nav-next:hover {
+  top: 22px;
+}
+
+.stats div:last-child {
+  padding-right: 0;
+}
+
+.img-desc {
+  background: rgba(255, 255, 255, .075);
+  border-radius: 4px;
+}
+
+.logo-footer {
+  height: 50px;
+}
+
+
+/* [ project-specific ] */
+
+.l14 #slideText1 {
+  background: url('../img/l14/slide-1-text-bg.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.l14 #slideText2 {
+  background: url('../img/l14/slide-2-text-bg.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.l14 #slideText3 {
+  background: url('../img/l14/slide-3-text-bg.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.oic #title {
+  font-size: 32px;
+}
+
+
+/* [ SM ] * [ mobile landscape ] * [ SM ] * [ mobile landscape ] * [ SM ] */
+
+@media screen and (min-width: 576px) {
+  .logo-footer {
+    height: 60px;
+  }
+  .oic #title {
+    font-size: 34px;
+  }
+}
+
+
+/* [ MD ] * [ tablet portrait ] * [ MD ] * [ tablet portrait ] * [ MD ] */
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    height: 70px;
+  }
+}
+
+
+/* [ LG ] * [ desktop ] * [ LG ] * [ desktop ] * [ LG ] * [ desktop ] * [ LG ] */
+
+@media screen and (min-width: 992px) {
+  .img-desc {
+    background: rgba(255, 255, 255, .05);
+    /* 5% is too faint on mobile (oled), 7.5% is too opaque on desktop */
+  }
+  .logo-footer {
+    height: 80px;
+  }
+}
+
+
+/* [ XL ] * [ large desktop ] * [ XL ] * [ large desktop ] * [ XL ] */
+
+@media screen and (min-width: 1200px) {}

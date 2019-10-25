@@ -1,52 +1,44 @@
 /*jslint browser: true*/
 /*global $*/
 $(function () {
-    
-//smooth scrooling
-    'use strict';
-    $('a[href*=#]:not([href=#])').click(function () {
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-            var target = $(this.hash);
-            
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 300, 'swing');
-                //hide nav after scroll
-                setTimeout(function () {
-                    $('#nav').addClass('nav-bye-bye');
-                }, 330);
-                return false;
-            }
-        }
-    });
 
-// hide nav on scroll
-    var lastScrollTop = 0,
-        delta = 4;   // pixel move needed to trigger
-    $(window).scroll(function (event) {
-        var st = $(this).scrollTop(),
-            scroll = $(window).scrollTop();
-        
-        if (Math.abs(lastScrollTop - st) <= delta) {
-            return;
-        }
-        if (scroll < 1) {
-            $("#nav").addClass('nav-top');
-        } else {
-            $("#nav").removeClass('nav-top');
-            if (st > lastScrollTop) {   // scroll down
-                $("#nav, #proj-nav").addClass('nav-bye-bye');
-            } else {   // scroll up
-                $("#nav, #proj-nav").removeClass('nav-bye-bye');
-            }
-            lastScrollTop = st;
-        }
-    });
+  // add class to nav when open - mobile
+  $('.navbar-toggler').click(function () {
+    $('.navbar').toggleClass('show');
+  });
 
-// click to play/pause
-    $('.vid-click').click(function () {
-        this.paused ? this.play() : this.pause();
+  // swap "menu" and "close" (found in HTML markup data)
+  $('#menuButton').on('click', function () {
+    var el = $(this);
+    if (el.text() == el.data('text-swap')) {
+      el.text(el.data('text-original'));
+    } else {
+      el.data('text-original', el.text());
+      el.text(el.data('text-swap'));
+    }
+  });
+
+  // close nav when li clicked
+  $('#navbarSupportedContent').find('a').on('click', function () {
+    $('#navbarSupportedContent').removeClass('show');
+    $('.navbar').removeClass('show');
+    // reset menu text from "close"
+    $('#menuButton').text('menu');
+  });
+
+  // native smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
     });
+  });
+
+
+  //// click to play/pause
+  //    $('.vid-click').click(function () {
+  //        this.paused ? this.play() : this.pause();
+  //    });
 });
