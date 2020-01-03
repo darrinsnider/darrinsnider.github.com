@@ -1,7 +1,11 @@
 /* [ work ] * [ work ] * [ work ] * [ work ] * [ work ] * [ work ] */
 
 .swiper-container {
-  padding-top: 70px;
+  /*  padding-top: 70px; height of nav when swiper was first element*/
+}
+
+.nav-margin {
+  margin-top: 70px;
 }
 
 .swiper-slide {
@@ -29,6 +33,28 @@
 
 .slide-text .desc {
   font-size: 17px;
+}
+
+.swiper-container-text .swiper-slide {
+  opacity: 0 !important;
+}
+
+.swiper-container-text .swiper-slide-active {
+  opacity: 1 !important;
+}
+
+@media (max-width: 767.98px) {
+  .swiper-container-text .sz-xl,
+  .intro-fixed-text .sz-xl {
+    font-size: 30px;
+  }
+}
+
+.intro-fixed-text {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 

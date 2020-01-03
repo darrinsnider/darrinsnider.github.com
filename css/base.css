@@ -128,8 +128,16 @@ a.grey3:hover {
   color: #ABABAB;
 }
 
+.clear {
+  color: transparent;
+}
+
 
 /* fonts */
+
+.sz-xxs {
+  font-size: 12px;
+}
 
 .sz-xs {
   font-size: 14px;
@@ -218,6 +226,17 @@ a.grey3:hover {
 .swiper-pagination-bullet-active {
   opacity: 1;
   border: 2px solid #FF5B7A;
+}
+
+.tooltip .arrow::before {
+  border-top-color: rgba(21, 22, 25, .95);
+}
+
+.tooltip .tooltip-inner {
+  background: rgba(21, 22, 25, .95);
+  max-width: 350px;
+  font-family: 'Prompt', sans-serif;
+  color: #DDD;
 }
 
 

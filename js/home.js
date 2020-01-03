@@ -54,4 +54,7 @@ $(function () {
     path: '/img/home/skill-3.json'
   });
 
+  // tooltips
+  $('[data-toggle="tooltip"]').tooltip()
+
 });
